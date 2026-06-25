@@ -4,7 +4,7 @@
 <head>
 <title>ASHER</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 body{
@@ -15,8 +15,12 @@ body{
     color:white;
     font-family:'Poppins', sans-serif;
     text-align:center;
-    margin-top:12%;
+    margin:0;
     min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 h1{
@@ -25,36 +29,41 @@ h1{
     letter-spacing:5px;
     color:#f8f9fa;
     text-shadow:0 0 15px rgba(255,255,255,0.15);
+    margin-bottom:20px;
 }
 
 .quote{
     font-style:italic;
-    font-size:22px;
-    color:#d6d6d6;
-    margin:25px auto;
-    max-width:800px;
-    line-height:1.8;
+    font-size:16px;
+    color:#cfd8dc;
+    white-space:nowrap;
+    letter-spacing:1px;
+    margin-bottom:50px;
 }
 
 .question{
-    font-size:22px;
-    color:#ffffff;
-    margin-top:35px;
+    font-size:42px;
+    font-weight:700;
+    color:#ffe082;
+    text-shadow:
+        0 0 15px rgba(255,224,130,0.5),
+        0 0 30px rgba(255,224,130,0.25);
+    margin-bottom:30px;
 }
 
 input{
-    margin-top:20px;
-    padding:12px 18px;
-    width:280px;
+    padding:14px 20px;
+    width:300px;
     border:none;
     border-radius:8px;
     font-size:18px;
     text-align:center;
     background:rgba(255,255,255,0.95);
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
 button{
-    margin-top:30px;
+    margin-top:25px;
     padding:15px 40px;
     font-size:18px;
     border:none;
@@ -62,12 +71,16 @@ button{
     cursor:pointer;
     background:#1e4d8f;
     color:white;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 button:hover{
     background:#2c6bc0;
     transform:translateY(-2px);
+}
+
+button:active{
+    transform:translateY(0);
 }
 </style>
 
@@ -75,7 +88,7 @@ button:hover{
 
 <body>
 
-<h1>MISSIONN to ASHER</h1>
+<h1>MISSIONN'S MESSAGE FOR ASHER</h1>
 
 <p class="quote">
 "IGNOSCE MIHI.... PRO AMORE MEO IMPERFECTO — QUOD TE AMORE MEO CORRUPI."
@@ -86,8 +99,6 @@ We have a scandal, I'd Fitzgerald...you?
 </p>
 
 <input type="text" id="answer">
-
-<br>
 
 <button onclick="checkAnswer()">Continue</button>
 
@@ -109,3 +120,5 @@ function checkAnswer() {
 
 </body>
 </html>
+
+
