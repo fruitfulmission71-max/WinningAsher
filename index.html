@@ -36,13 +36,34 @@ button{
 
 <h1>MISSSIONN'S MESSAGE FOR ASHER</h1>
 
-<p>You Shall Follow The Stepps that Follow To Uncover The Final Information.<br>
-Just for YOU!.
+<p>IGNOSCE MIHI.... PRO AMORE MEO IMPERFECTO - QUOD TE AMORE MEO CORRUPI.<br>
+
 </p>
 
-<a href="#">
-<button>FOLLOW ME</button>
-</a>
+<p>We have a scandal, I'd Fitzgerald...you?</p>
+
+<input type="text" id="answer">
+
+<button onclick="checkAnswer()">Continue</button>
+
+<script>
+function checkAnswer() {
+    let answer = document.getElementById("answer").value;
+
+if(
+    answer.toLowerCase() === "olivia" ||
+    answer.toLowerCase() === "olivia pope" ||
+    answer.toLowerCase() === "pope"
+)
+        window.location.href = "https://YOUR-STAGE-2-LINK";
+    } else {
+        alert("Incorrect. Try again.");
+    }
+}
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
